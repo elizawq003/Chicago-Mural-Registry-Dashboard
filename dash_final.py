@@ -30,6 +30,7 @@ print(bad_lon[['artwork_title', 'latitude', 'longitude']])
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css',
                        'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap']
 app = Dash(external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
+server = app.server 
 
 #columns to be displayed in table: artwork_title, artist_credit, year_installed, zip)
 df_table = df[['artwork_title', 'artist_credit', 'year_installed', 'zip']]
