@@ -1,0 +1,41 @@
+.stat-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid #3182bd;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.stat-circle:hover {
+    transform: scale(1.12) translateY(-6px);
+    box-shadow: 0 14px 28px rgba(8, 81, 156, 0.35);
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-number {
+    font-size: 28px;
+    font-weight: 700;
+}
